@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tilt Prism|DynaPuff&effect=fire-animation">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url(./login.jpg);
+
+        }
+
+        h1 {
+            font-family: Tilt Prism;
+            text-decoration-line: underline;
+            text-decoration-color: black;
+            color: red;
+            font-style: oblique;
+
+        }
+
+        .form {
+            font-family: Oswald;
+            background-color: rgb(123, 239, 239);
+            width: 600px;
+            text-align: center;
+            margin-left: 300px;
+            margin-top: 0px;
+            padding: 5px;
+            box-shadow: inset 2px 2px 5px 4px black;
+        }
+
+        label {
+            margin: 20px 10px;
+            font-size: 25px;
+        }
+
+        .course {
+            font-family: Oswald;
+            margin: 15px 10px;
+            font-size: 25px;
+            background-color: rgb(115, 208, 247);
+            padding: 15px;
+        }
+
+        select {
+            margin: 15px 10px;
+            font-size: 25px;
+            background-color: rgb(180, 233, 255);
+
+        }
+
+        input {
+            margin: 15px 10px;
+            font-size: 15px;
+            border-radius: 5px;
+            border: 1px solid green;
+            padding: 10px;
+            background-color: rgb(180, 233, 255);
+        }
+
+        button {
+            font-family: Oswald;
+            margin: 20px 10px;
+            font-size: 25px;
+            padding: 15px;
+            border: 2px solid black;
+            border-radius: 8px;
+            background-color: rgb(152, 220, 249);
+        }
+
+        button:hover {
+            color: rgb(253, 11, 7);
+        }
+
+
+        select {
+            border-radius: 5px;
+            padding: 7px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form">
+        <form action="">
+            <div>
+                <h1>REGISTERATION </h1>
+                <label for=""> User Name :<input id="name" type="text" name="name" placeholder="your name"></label><br>
+                <label for=""> Password : <input id='pass' type="password" name="Password"></label><br>
+                <label for=""> Email id : <input id="email" type="email" name="email"></label><br>
+                <label for=""> Mobile No : <input id="number" type="number" name="ph"></label><br>
+                <label for=""> State<select name="State" id="State"> </label><br>
+                <option value="tn"> Tamil Nadu</option>
+                <option value="ap"> Andhra Pradesh</option>
+                <option value="kl">Kerala</option>
+                <option value="ka">Karnadaka</option>
+                </select>
+            </div><br>
+            <div class="course">
+                <u>UG COURSES:</u><br>
+                <input type="radio" name="ug">B.Sc
+                <input type="radio" name="ug">B.Tech
+                <input type="radio" name="ug">BCA <br><br>
+                <u>PG COURSES:</u><br>
+                <input type="radio" name="ug">M.Sc
+                <input type="radio" name="ug">M.Tech
+                <input type="radio" name="ug">MCA
+            </div>
+            <button onclick="myform()">SUBMIT</button>
+        </form>
+    </div>
+</body>
+
+</html>
